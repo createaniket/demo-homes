@@ -1,0 +1,136 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-paper: var(--paper);
+  --color-stone: var(--stone);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-line: var(--line);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.25rem;
+
+  /* Brand palette */
+  --paper: oklch(0.972 0.012 85);            /* warm off-white */
+  --stone: oklch(0.92 0.015 80);             /* warm stone */
+  --ink: oklch(0.18 0.01 60);                /* deep charcoal */
+  --ink-soft: oklch(0.32 0.012 60);
+  --gold: oklch(0.72 0.09 75);               /* brushed brass */
+  --gold-soft: oklch(0.84 0.06 80);
+  --line: oklch(0.86 0.012 80);
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--paper);
+  --secondary: var(--stone);
+  --secondary-foreground: var(--ink);
+  --muted: var(--stone);
+  --muted-foreground: oklch(0.45 0.01 60);
+  --accent: var(--gold);
+  --accent-foreground: var(--ink);
+  --border: var(--line);
+  --input: var(--line);
+  --ring: var(--gold);
+  --destructive: oklch(0.55 0.2 25);
+  --destructive-foreground: var(--paper);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--ink);
+}
+
+.dark {
+  --background: oklch(0.14 0.008 60);
+  --foreground: var(--paper);
+  --card: oklch(0.2 0.01 60);
+  --card-foreground: var(--paper);
+  --primary: var(--paper);
+  --primary-foreground: var(--ink);
+  --border: oklch(1 0 0 / 12%);
+  --muted: oklch(0.25 0.01 60);
+  --muted-foreground: oklch(0.7 0.01 60);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.01em; }
+  .eyebrow {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--color-gold);
+  }
+  .rule { height: 1px; background: var(--color-line); }
+}
+
+@utility container-x {
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  max-width: 88rem;
+  @media (min-width: 1024px) { padding-inline: 3rem; }
+}
+
+@utility btn-primary {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  background: var(--color-ink); color: var(--color-paper);
+  padding: 1rem 1.75rem; font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 500;
+  transition: all .3s ease;
+  &:hover { background: var(--color-gold); color: var(--color-ink); }
+}
+@utility btn-ghost {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  border: 1px solid currentColor;
+  padding: 1rem 1.75rem; font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 500;
+  transition: all .3s ease;
+  &:hover { background: var(--color-ink); color: var(--color-paper); border-color: var(--color-ink); }
+}
+@utility link-underline {
+  position: relative;
+  &::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 1px;
+    background: currentColor; transform: scaleX(0); transform-origin: left;
+    transition: transform .4s ease;
+  }
+  &:hover::after { transform: scaleX(1); }
+}
