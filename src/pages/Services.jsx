@@ -16,7 +16,7 @@ export default function Services() {
   return (
     <>
       <PageHero eyebrow="Services" title="Seventeen specialist divisions. One trusted group."
-        lede="From bespoke joinery to large-scale residential development, every division is staffed by directly employed teams and overseen by a Saanti director." />
+        lede="From bespoke joinery to large-scale residential development, every division is staffed by directly employed teams and overseen by a santi director." />
       <section className="container-x pb-24 lg:pb-32 max-w-4xl">
         <div className="border-y border-line">
           {divisionGroups.map(group => {

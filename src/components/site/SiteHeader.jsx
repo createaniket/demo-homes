@@ -19,7 +19,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 bg-paper/85 backdrop-blur border-b border-line">
       <div className="container-x flex items-center justify-between h-20">
         <Link to="/" className="flex items-baseline gap-2 group">
-          <span className="font-display text-2xl tracking-tight text-ink">Saanti</span>
+          <span className="font-display text-2xl tracking-tight text-ink">santi</span>
           <span className="eyebrow text-ink-soft group-hover:text-gold transition">Homes</span>
         </Link>
 
@@ -63,7 +63,7 @@ export function SiteHeader() {
                   <Link key={d.slug} to={`/services/${d.slug}`}
                     onClick={() => setOpen(false)}
                     className="text-xs uppercase tracking-widest text-ink-soft py-1">
-                    {d.name.replace("Saanti ", "")}
+                    {d.name.replace("santi ", "")}
                   </Link>
                 ))
               )}

@@ -12,7 +12,7 @@ export default function Investors() {
   return (
     <>
       <PageHero eyebrow="Investors & Partners" title="Capital, land and partnership."
-        lede="Saanti Developments and Saanti Facilities work with institutional capital, private investors and land-owners to deliver schemes of substance." />
+        lede="santi Developments and santi Facilities work with institutional capital, private investors and land-owners to deliver schemes of substance." />
 
       <section className="container-x pb-24 grid md:grid-cols-2 gap-px bg-line">
         {offerings.map(o => (
@@ -29,7 +29,7 @@ export default function Investors() {
           <h2 className="font-display text-5xl leading-[1]">For investor decks, schemes in the pipeline and partnership terms — speak to our development office.</h2>
           <div className="space-y-2">
             <div className="eyebrow text-gold-soft">Development Office</div>
-            <div className="font-display text-3xl">invest@saantigroup.co.uk</div>
+            <div className="font-display text-3xl">invest@santigroup.co.uk</div>
             <div className="text-paper/70">020 0000 0000</div>
             <Link to="/contact" className="btn-ghost mt-6 inline-flex text-paper">Make an Introduction</Link>
           </div>

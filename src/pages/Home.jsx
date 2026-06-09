@@ -18,7 +18,7 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="relative min-h-[92vh] flex items-end">
-        <img src={hero} alt="Saanti Group luxury home at dusk" className="absolute inset-0 h-full w-full object-cover" />
+        <img src={hero} alt="santi Group luxury home at dusk" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/10" />
         <div className="relative container-x pb-16 lg:pb-24 text-paper">
           <div className="eyebrow text-gold-soft mb-8">Construction · Design · Maintenance · Warranty</div>
@@ -27,7 +27,7 @@ export default function Home() {
             <em className="not-italic text-gold-soft">built to last a lifetime.</em>
           </h1>
           <p className="mt-8 max-w-xl text-lg text-paper/85">
-            Saanti Group designs, builds, installs and maintains the finest homes across London and the Home Counties — backed by an industry-leading extended warranty.
+            santi Group designs, builds, installs and maintains the finest homes across London and the Home Counties — backed by an industry-leading extended warranty.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <Link to="/contact" className="btn-primary bg-paper text-ink hover:bg-gold">Request a Quote</Link>
@@ -53,7 +53,7 @@ export default function Home() {
           </div>
           <div className="lg:col-span-6 lg:col-start-7">
             <p className="text-lg text-ink-soft leading-relaxed">
-              Saanti is structured as a single property group — design studio, construction company, M&amp;E contractor, maintenance team and warranty provider — so the people who build your home are the people who look after it. One number to call, for the next decade.
+              santi is structured as a single property group — design studio, construction company, M&amp;E contractor, maintenance team and warranty provider — so the people who build your home are the people who look after it. One number to call, for the next decade.
             </p>
             <div className="mt-12 grid sm:grid-cols-2 gap-x-10 gap-y-8">
               {stagePillars.map(({ icon: Icon, title, text }) => (
@@ -94,7 +94,7 @@ export default function Home() {
                       <Link to={`/services/${d.slug}`}
                         className="group flex items-center justify-between gap-6 py-5">
                         <div className="flex items-baseline gap-6 min-w-0">
-                          <span className="font-display text-xl md:text-2xl text-ink group-hover:text-gold transition">{d.name.replace("Saanti ","")}</span>
+                          <span className="font-display text-xl md:text-2xl text-ink group-hover:text-gold transition">{d.name.replace("santi ","")}</span>
                           <span className="hidden md:block text-sm text-ink-soft truncate">{d.tagline}</span>
                         </div>
                         <ArrowUpRight size={18} className="shrink-0 opacity-40 group-hover:opacity-100 group-hover:text-gold transition" />
@@ -140,9 +140,9 @@ export default function Home() {
       {/* CRAFT */}
       <section className="bg-ink text-paper py-24 lg:py-32">
         <div className="container-x grid lg:grid-cols-2 gap-16 items-center">
-          <img src={craft} alt="Saanti craftsman" loading="lazy" className="w-full h-[520px] object-cover" />
+          <img src={craft} alt="santi craftsman" loading="lazy" className="w-full h-[520px] object-cover" />
           <div>
-            <div className="eyebrow text-gold-soft mb-6">The Saanti Standard</div>
+            <div className="eyebrow text-gold-soft mb-6">The santi Standard</div>
             <h2 className="font-display text-5xl leading-[1.05]">
               Built by people who care more than they need to.
             </h2>
@@ -158,7 +158,7 @@ export default function Home() {
       <section className="container-x py-24 lg:py-32">
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
-            <div className="eyebrow mb-6">Saanti Extended Warranty™</div>
+            <div className="eyebrow mb-6">santi Extended Warranty™</div>
             <h2 className="font-display text-5xl lg:text-6xl text-ink leading-[1]">
               Protect your investment, long after handover.
             </h2>
@@ -214,7 +214,7 @@ export default function Home() {
             <div className="mt-12 space-y-2 text-sm">
               <div className="eyebrow text-ink-soft">Speak to us</div>
               <div className="font-display text-3xl text-ink">020 0000 0000</div>
-              <div className="text-ink-soft">hello@saantigroup.co.uk</div>
+              <div className="text-ink-soft">hello@santigroup.co.uk</div>
             </div>
           </div>
           <div><QuoteForm /></div>

@@ -50,7 +50,7 @@ export default function ServicePage() {
         <div className="container-x grid lg:grid-cols-2 gap-16">
           <div>
             <div className="eyebrow mb-6">Enquire</div>
-            <h2 className="font-display text-5xl text-ink leading-[1]">Request a quote for {d.name.replace("Saanti ","")}.
+            <h2 className="font-display text-5xl text-ink leading-[1]">Request a quote for {d.name.replace("santi ","")}.
             </h2>
             <p className="mt-6 text-ink-soft max-w-md">A director responds within one working day with next steps and an initial budget framework.</p>
           </div>

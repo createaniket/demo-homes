@@ -12,7 +12,7 @@ export default function Portfolio() {
   return (
     <>
       <PageHero eyebrow="Portfolio" title="A decade of delivered work."
-        lede="Each project tells you something different about how Saanti operates. Filter by category to see the breadth of work the group delivers." />
+        lede="Each project tells you something different about how santi operates. Filter by category to see the breadth of work the group delivers." />
 
       <section className="container-x">
         <div className="flex flex-wrap gap-2 pb-12 border-b border-line">

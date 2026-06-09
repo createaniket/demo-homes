@@ -8,7 +8,7 @@ export function SiteFooter() {
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
             <div className="flex items-baseline gap-2">
-              <span className="font-display text-3xl">Saanti</span>
+              <span className="font-display text-3xl">santi</span>
               <span className="eyebrow text-gold-soft">Homes</span>
             </div>
             <p className="mt-6 text-sm text-paper/70 leading-relaxed max-w-sm">
@@ -16,8 +16,8 @@ export function SiteFooter() {
             </p>
             <div className="mt-8 space-y-1 text-sm text-paper/80">
               <div>020 0000 0000</div>
-              <div>hello@saantigroup.co.uk</div>
-              <div>1 Saanti House, London, EC2A</div>
+              <div>hello@santigroup.co.uk</div>
+              <div>1 santi House, London, EC2A</div>
             </div>
           </div>
 
@@ -30,7 +30,7 @@ export function SiteFooter() {
                     <li key={d.slug}>
                       <Link to={`/services/${d.slug}`}
                         className="text-sm text-paper/75 hover:text-gold transition">
-                        {d.name.replace("Saanti ", "")}
+                        {d.name.replace("santi ", "")}
                       </Link>
                     </li>
                   ))}
@@ -41,7 +41,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-paper/15 flex flex-col md:flex-row gap-4 justify-between text-xs text-paper/55">
-          <div>© {new Date().getFullYear()} Saanti Group Ltd. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} santi Group Ltd. All rights reserved.</div>
           <div className="flex gap-6">
             <Link to="/" className="hover:text-gold">Home</Link>
             <Link to="/services" className="hover:text-gold">Services</Link>

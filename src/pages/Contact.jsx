@@ -10,20 +10,20 @@ export default function Contact() {
         <div className="lg:col-span-4 space-y-10">
           <div>
             <div className="eyebrow mb-3">Studio</div>
-            <div className="font-display text-2xl text-ink leading-tight">1 Saanti House<br/>Shoreditch<br/>London EC2A</div>
+            <div className="font-display text-2xl text-ink leading-tight">1 santi House<br/>Shoreditch<br/>London EC2A</div>
           </div>
           <div>
             <div className="eyebrow mb-3">Speak to us</div>
             <div className="font-display text-2xl text-ink">020 0000 0000</div>
-            <div className="text-ink-soft">hello@saantigroup.co.uk</div>
+            <div className="text-ink-soft">hello@santigroup.co.uk</div>
           </div>
           <div>
             <div className="eyebrow mb-3">Departments</div>
             <ul className="space-y-2 text-ink-soft text-sm">
-              <li>New enquiries — hello@saantigroup.co.uk</li>
-              <li>Investors — invest@saantigroup.co.uk</li>
-              <li>Careers — careers@saantigroup.co.uk</li>
-              <li>Press — press@saantigroup.co.uk</li>
+              <li>New enquiries — hello@santigroup.co.uk</li>
+              <li>Investors — invest@santigroup.co.uk</li>
+              <li>Careers — careers@santigroup.co.uk</li>
+              <li>Press — press@santigroup.co.uk</li>
             </ul>
           </div>
           <div>

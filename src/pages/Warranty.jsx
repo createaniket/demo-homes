@@ -14,8 +14,8 @@ const covered = ["Kitchens","Bathrooms","Electrical works","Plumbing & heating",
 export default function Warranty() {
   return (
     <>
-      <PageHero eyebrow="Saanti Extended Warranty™" title="Protect your investment, long after the project is complete."
-        lede="A genuinely industry-leading warranty programme — written, owned and serviced by Saanti Group, transferable to future owners." />
+      <PageHero eyebrow="santi Extended Warranty™" title="Protect your investment, long after the project is complete."
+        lede="A genuinely industry-leading warranty programme — written, owned and serviced by santi Group, transferable to future owners." />
 
       <section className="container-x pb-24 grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-5">

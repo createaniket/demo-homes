@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import { PageHero } from "@/components/site/PageHero.jsx";
 
 const roles = [
-  { title: "Senior Project Manager", division: "Saanti Homes", location: "London", type: "Permanent" },
-  { title: "Interior Designer", division: "Saanti Interior Design", location: "London", type: "Permanent" },
-  { title: "Site Manager — High-End Residential", division: "Saanti Homes", location: "Surrey", type: "Permanent" },
-  { title: "Bespoke Joiner", division: "Saanti Joinery", location: "Workshop, Essex", type: "Permanent" },
-  { title: "Lighting Designer", division: "Saanti Lighting", location: "London", type: "Permanent" },
-  { title: "Quantity Surveyor", division: "Saanti Group", location: "London", type: "Permanent" },
+  { title: "Senior Project Manager", division: "santi Homes", location: "London", type: "Permanent" },
+  { title: "Interior Designer", division: "santi Interior Design", location: "London", type: "Permanent" },
+  { title: "Site Manager — High-End Residential", division: "santi Homes", location: "Surrey", type: "Permanent" },
+  { title: "Bespoke Joiner", division: "santi Joinery", location: "Workshop, Essex", type: "Permanent" },
+  { title: "Lighting Designer", division: "santi Lighting", location: "London", type: "Permanent" },
+  { title: "Quantity Surveyor", division: "santi Group", location: "London", type: "Permanent" },
 ];
 
 export default function Careers() {
@@ -31,7 +31,7 @@ export default function Careers() {
           ))}
         </div>
         <div className="mt-12 text-ink-soft">
-          Don't see your role? Send a CV to <a href="mailto:careers@saantigroup.co.uk" className="text-ink link-underline">careers@saantigroup.co.uk</a>.
+          Don't see your role? Send a CV to <a href="mailto:careers@santigroup.co.uk" className="text-ink link-underline">careers@santigroup.co.uk</a>.
         </div>
       </section>
     </>
